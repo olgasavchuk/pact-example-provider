@@ -8,6 +8,7 @@ PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKE
 GIT_COMMIT?=$(shell git rev-parse HEAD)
 GIT_BRANCH?=$(shell git rev-parse --abbrev-ref HEAD)
 ENVIRONMENT?=production
+PACT_DO_NOT_TRACK?=true
 
 # Only deploy from master (to production env) or test (to test env)
 ifeq ($(GIT_BRANCH),master)
