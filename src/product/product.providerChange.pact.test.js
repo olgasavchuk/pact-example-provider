@@ -22,7 +22,7 @@ describe('Pact Verification', () => {
       console.log('pact url specified, so this test should not run');
       return;
     }
-    // For 'normal' provider builds, fetch the the latest version from the main branch of each consumer, as specified by
+    // For 'normal' provider builds, fetch the latest version from the main branch of each consumer, as specified by
     // the consumer's mainBranch property and all the currently deployed and currently released and supported versions of each consumer.
     // https://docs.pact.io/pact_broker/advanced_topics/consumer_version_selectors
     const fetchPactsDynamicallyOpts = {
